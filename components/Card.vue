@@ -34,9 +34,7 @@ const emit = defineEmits<{
         class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8"
       >
   
-        <p class="mt-4 text-sm sm:text-base">
-          {{ props.content.replace(/\$\{\d+\}/g, '_______') }}
-        </p>
+        <pre class="mt-4 text-sm sm:text-base text-ellipsis h-32 overflow-y-scroll whitespace-pre-wrap">{{ props.content.replace(/\$\{\d+\}/g, '_______') }}</pre>
   
         <p class="mt-8 font-bold">Chat</p>
       </div>

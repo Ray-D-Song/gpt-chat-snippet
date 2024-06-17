@@ -72,10 +72,10 @@ defineExpose({
                   <div class="mt-3 text-left ml-4">
                     <DialogTitle as="h3" class="text-base font-semibold leading-6 text-gray-900">{{ snippet.desc }}</DialogTitle>
                     <div class="mt-2 flex justify-around gap-8">
-                      <div class="w-80 max-w-80 break-words">
+                      <div class="w-[30rem] break-words h-80 overflow-scroll">
                         <template v-for="(fra, idx) in fragments" :key="idx">
-                          <span class="text-sm text-gray-500 leading-10">{{ fra }}</span>
-                          <span @click="currentInputIdx = idx" v-if="idx !== (fragments.length-1)" :class="`mx-2 text-blue-800 text-sm border-blue-800 hover:cursor-pointer leading-10 ${inputValues[idx].length !== 0 ? 'border-b' : ''}`">{{ inputValues[idx].length === 0 ? '____点击输入____' : inputValues[idx] }}</span>
+                          <pre class="text-sm text-gray-500 leading-10">{{ fra }}</pre>
+                          <pre @click="currentInputIdx = idx" v-if="idx !== (fragments.length-1)" :class="`mx-2 text-blue-800 text-sm border-blue-800 hover:cursor-pointer leading-10 ${inputValues[idx].length !== 0 ? 'border-b' : ''}`">{{ inputValues[idx].length === 0 ? '____点击输入____' : inputValues[idx] }}</pre>
                         </template>
                       </div>
                       <div class="border-r-2 border-dashed"/>

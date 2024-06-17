@@ -15,7 +15,6 @@ function open() {
     api_url: userConfig.value.api_url,
     token: userConfig.value.token
   }
-  console.log(userConfig.value)
   visible.value = true
 }
 
@@ -46,7 +45,11 @@ onChange(async files => {
       throw '请上传导出的 .json 文件'
     const fileContent = JSON.parse(await files[0].text())
     userConfig.value = fileContent
-    console.log(userConfig.value)
+    opt.value = {
+      model: userConfig.value.model,
+      api_url: userConfig.value.api_url,
+      token: userConfig.value.token
+    } 
   } catch(e) {
     window.alert(e)
   }
