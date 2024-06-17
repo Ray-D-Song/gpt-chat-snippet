@@ -5,6 +5,11 @@ export default function useChat() {
   const loading = ref(false)
 
   async function send(content: string) {
+    if(userConfig.value.token.length === 0) {
+      window.alert(`请先设置token (api key), 
+获取方式: https://platform.openai.com/api-keys`)
+      return
+    }
     try {
       loading.value = true
       const userMessages = [{ role: 'user', content: content }]

@@ -87,7 +87,7 @@ defineExpose({
                     </div>
 
                     <div class="mb-3">
-                      <label for="token" class="block text-base font-medium text-gray-600"> token: </label>
+                      <label for="token" class="block text-base font-medium text-gray-600"> token(api key): </label>
                       <input
                           placeholder=""
                           class="h-9 p-2 border mt-1 w-full rounded-md border-gray-200 shadow-sm sm:text-sm"
