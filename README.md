@@ -1,6 +1,3 @@
-## screenshot
-![screenshot](/img/main_page.png)
-
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fray-d-song%2Fgpt-chat-snippet)
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Ray-D-Song/gpt-chat-snippet)
@@ -13,3 +10,9 @@
 1. 自定义请求网址和模型
 2. 记录对话卡片, 内容插槽和重复请求
 3. 配置导入和导出
+
+## screenshot
+![screenshot](/img/main_page.png)
+![screenshot](/img/dialog.png)
+![screenshot](/img/new.png)
+![screenshot](/img/config.png)
